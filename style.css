@@ -36,7 +36,8 @@ main{
     flex-wrap: wrap;
     position: absolute;
     height: 518px;
-    max-width: 400px;
+    width: 400px;
+    max-width: 100%;
     right: 0;
     margin: -1px;
     border-radius: 0px 14px 14px 0px;
@@ -46,16 +47,15 @@ main{
 }
 @media (max-width: 450px) {
     main{
-        max-width: 370px;
+        max-width: 350px;
         border-radius: 16px;
 
     }
-    
 }
 article{
     margin: 20px auto;
-    display: block;
     padding: 30px;
+
 }
 article > h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -66,6 +66,32 @@ article > p{
     font-weight: bold;
 }
 article > input{
-    width: 200px;
- 
+    display: flex;
+    border: 2px solid rgb(240, 237, 237);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    font-size: 13pt;
+    padding: 10px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1s;
+}
+input:hover{
+    box-shadow: 0px 0px 0px 1px  #5C98FF;
+}
+.botao{
+    border: 2px solid rgb(240, 237, 237);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    margin: 20px auto;
+    text-transform:lowercase;
+    font-weight: 800;
+    transition: .5s;
+}
+.botao:hover{
+    box-shadow: 0px 0px 0px 1px  rgba(43, 255, 0, 0.712);
+    font-size: 18pt;
 }
